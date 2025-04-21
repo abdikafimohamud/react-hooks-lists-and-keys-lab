@@ -1,13 +1,13 @@
+// About.js
 import React from "react";
 import Links from "./Links";
 
-function About({ bio, links }) {
+function About() {
   return (
     <div id="about">
       <h2>About Me</h2>
-      {bio && bio.length > 1 ? <p>{bio}</p> : null}
-      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      <Links github={links.github} linkedin={links.linkedin} />
+      <p>I am a passionate frontend developer who loves building beautiful UIs and interactive web apps.</p>
+      <Links github="https://github.com/yourusername" linkedin="https://linkedin.com/in/yourusername" />
     </div>
   );
 }
